@@ -1,0 +1,8 @@
+name: "USCOTS 2017"
+output_dir: "."
+navbar:
+  title: "USCOTS 2017"
+output:
+  html_document:
+    theme: readable
+    highlight: textmate

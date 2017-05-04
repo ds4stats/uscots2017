@@ -1,0 +1,49 @@
+---
+title: "Modules for Infusing Data Science into the Statistics Curriculum"
+---
+
+* * * 
+
+## Overview
+
+This workshop will explore ways to incorporate data-scientific topics into existing statistics courses, especially at the introductory level. It will preview modules that allow for the inclusion of introductory tutorials and lab activities into courses for students with limited technical backgrounds. Participants will work through class-tested tutorials and lab activities. Key topics will include data wrangling and statistical graphics. The workshop will close with a discussion related to how these materials have been used in existing courses and an overview of the supporting materials. Basic knowledge of R will be valuable, but not required.
+
+The tutorials and case studies were developed by [Adam Loy](https://aloy.github.io/), [Shonda Kuiper](https://www.grinnell.edu/users/kuipers), and [Laura Chihara](http://www.people.carleton.edu/~lchihara/) with support from the [ACM FaCE program](http://www.acm.edu/professional_development/FaCE__Faculty_Career_Enhancement_Project_.html) and [The Teagle Foundation](http://hybridliberalarts.org/about/). 
+
+* * * 
+
+
+## Preparation
+
+Prior to the workshop, please do the following:
+
+1. Make sure that you have access to R and R Studio.
+2. Update/install the following R packages:
+3. If you have never seen R Studio or R markdown before, then please read the following:
+    - [R and RStudio Basics](https://ismayc.github.io/rbasics-book/3-rstudiobasics.html) by Chester Ismay
+    - [R markdown](https://ismayc.github.io/rbasics-book/4-rmarkdown.html) by Chester Ismay
+4. Read 
+
+* * *
+
+
+## Workshop Outline
+
+
+### Welcome!
+
+1. Introductions
+2. Brief overview of the project
+
+### Module 1: Data visualization with `ggplot2`
+
+1. Obtain materials...
+
+### Module 2: Data wrangling with `dplyr`
+
+1. Obtain materials...
+
+### Wrapping up
+
+1. Where have these modules been tested?
+2. What topics are missing?
