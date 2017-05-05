@@ -27,7 +27,7 @@ Prior to the workshop, please do the following:
 * * *
 
 
-## Workshop Outline
+## Outline
 
 
 ### Welcome!
@@ -35,11 +35,11 @@ Prior to the workshop, please do the following:
 1. Introductions
 2. Brief overview of the project
 
-### Module 1: Data visualization with `ggplot2`
+### Data visualization with `ggplot2`
 
 1. Obtain materials...
 
-### Module 2: Data wrangling with `dplyr`
+### Data wrangling with `dplyr`
 
 1. Obtain materials...
 
@@ -47,3 +47,8 @@ Prior to the workshop, please do the following:
 
 1. Where have these modules been tested?
 2. What topics are missing?
+
+* * *
+
+## Additional Resources
+

@@ -1,7 +1,7 @@
-name: "USCOTS 2017"
+name: "USCOTS Workshop 2017"
 output_dir: "."
 navbar:
-  title: "USCOTS 2017"
+  title: "USCOTS Workshop 2017"
 output:
   html_document:
     theme: readable
