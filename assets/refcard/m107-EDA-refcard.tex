@@ -1,0 +1,263 @@
+
+%\VignetteIndexEntry{Minimal R}
+%\VignettePackage{mosaic}
+%\VignetteKeywords{mosaic, vignettes, minimal}
+%\VignetteEngine{knitr::knitr} 
+
+\documentclass[10pt]{report}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+\usepackage[landscape,margin=.40in,top=.30in,bottom=.30in,includehead,includefoot]{geometry}
+
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{longtable}
+
+\usepackage[utf8]{inputenc}
+
+%%%%  fancy family
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\renewcommand{\chaptermark}[1]{\thispagestyle{fancy}\markboth{{#1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{{#1}}{}}
+
+\chead{}
+\lhead[\sf \thepage]{\sf \leftmark}
+\rhead[\sf \leftmark]{\sf \thepage}
+
+\pagestyle{fancy}
+
+
+%%% some local defs
+
+\newcounter{myenumi}
+\newcommand{\saveenumi}{\setcounter{myenumi}{\value{enumi}}}
+\newcommand{\reuseenumi}{\setcounter{enumi}{\value{myenumi}}}
+
+\def\R{{\sf R}}
+\def\Rstudio{{\sf RStudio}}
+\def\RStudio{{\sf RStudio}}
+\def\term#1{\textbf{#1}}
+\def\tab#1{{\sf #1}}
+
+\providecommand{\variable}[1]{}
+\renewcommand{\variable}[1]{{\color{green!50!black}\texttt{#1}}}
+\providecommand{\dataframe}[1]{}
+\renewcommand{\dataframe}[1]{{\color{blue!80!black}\texttt{#1}}}
+\providecommand{\function}[1]{}
+\renewcommand{\function}[1]{{\color{purple!75!blue}\texttt{\StrSubstitute{#1}{()}{}()}}}
+\providecommand{\option}[1]{}
+\renewcommand{\option}[1]{{\color{brown!80!black}\texttt{#1}}}
+\providecommand{\pkg}[1]{}
+\renewcommand{\pkg}[1]{{\color{red!80!black}\texttt{#1}}}
+\providecommand{\code}[1]{}
+\renewcommand{\code}[1]{{\color{blue!80!black}\texttt{#1}}}
+
+\newcommand{\cran}{\href{http://www.R-project.org/}{CRAN}}
+\newcommand{\rterm}[1]{\textbf{#1}}
+
+\usepackage{textcomp}  % for \texttildelow
+\newcommand{\twiddle}{\raisebox{0.5ex}{\texttildelow}}
+
+
+\title{R Graphics for Intro Stats}
+
+\author{
+Adam Loy
+}
+
+\date{\today}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+\parindent=0pt
+
+
+
+
+
+\let\oldchapter=\chapter
+\def\chapter{\setcounter{page}{1}\oldchapter}
+
+
+%\begin{center}
+%\section*{Enough R for Intro Stats}
+%\end{center}
+
+\def\opt#1{#1}
+\def\squeeze{\vspace*{-4ex}}
+
+\chead{ \bfseries \Large {\sf R} Graphics for Intro Stats}
+\lhead{USCOTS 2017}
+\rhead{Adam Loy}
+
+This reference cards provides you with the recipes for exploratory graphics that are used in Intro Stats. For each recipe, you will need to carefully consider what ingredients need to be changed, such as: the names of the data set (\texttt{data\_set}), the variable name(s) (\texttt{variable}, \texttt{group}, \texttt{xvariable}, \texttt{yvariable}), and any axis labels that are not interpretable.
+
+\begin{multicols}{2}
+\section*{Univariate Graphics}
+\subsection*{Bar chart}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{ggplot}\hlstd{(}\hlkwc{data} \hlstd{= data_set,} \hlkwc{mapping} \hlstd{=} \hlkwd{aes}\hlstd{(}\hlkwc{x} \hlstd{= variable))} \hlopt{+}
+  \hlkwd{geom_bar}\hlstd{()} \hlopt{+}
+  \hlkwd{labs}\hlstd{(}\hlkwc{x} \hlstd{=} \hlstr{"Variable name"}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+\squeeze
+\subsection*{Histogram}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{ggplot}\hlstd{(}\hlkwc{data} \hlstd{= data_set,} \hlkwc{mapping} \hlstd{=} \hlkwd{aes}\hlstd{(}\hlkwc{x} \hlstd{= variable))} \hlopt{+}
+  \hlkwd{geom_histogram}\hlstd{(}\hlkwc{binwidth} \hlstd{= w,} \hlkwc{colour} \hlstd{=} \hlstr{"gray20"}\hlstd{)} \hlopt{+}
+  \hlkwd{labs}\hlstd{(}\hlkwc{x} \hlstd{=} \hlstr{"Variable name"}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+\squeeze
+\subsection*{Density}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{ggplot}\hlstd{(}\hlkwc{data} \hlstd{= data_set,} \hlkwc{mapping} \hlstd{=} \hlkwd{aes}\hlstd{(}\hlkwc{x} \hlstd{= variable))} \hlopt{+}
+  \hlkwd{geom_density}\hlstd{()} \hlopt{+}
+  \hlkwd{labs}\hlstd{(}\hlkwc{x} \hlstd{=} \hlstr{"Variable name"}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+\squeeze
+\subsection*{Histogram + Density}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{ggplot}\hlstd{(}\hlkwc{data} \hlstd{= data_set)} \hlopt{+}
+  \hlkwd{geom_density}\hlstd{(}\hlkwc{mapping} \hlstd{=} \hlkwd{aes}\hlstd{(}\hlkwc{x} \hlstd{= variable))} \hlopt{+}
+  \hlkwd{geom_histogram}\hlstd{(}\hlkwd{aes}\hlstd{(}\hlkwc{x} \hlstd{= variable,} \hlkwc{y} \hlstd{= ..density..),} \hlkwc{binwidth} \hlstd{= w,}
+                 \hlkwc{colour} \hlstd{=} \hlstr{"gray20"}\hlstd{)} \hlopt{+}
+  \hlkwd{labs}\hlstd{(}\hlkwc{x} \hlstd{=} \hlstr{"Variable name"}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+\squeeze
+\subsection*{Boxplot}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{ggplot}\hlstd{(}\hlkwc{data} \hlstd{= data_set,} \hlkwc{mapping} \hlstd{=} \hlkwd{aes}\hlstd{(}\hlstr{"var"}\hlstd{, variable))} \hlopt{+}
+  \hlkwd{geom_boxplot}\hlstd{()} \hlopt{+}
+  \hlkwd{labs}\hlstd{(}\hlkwc{x} \hlstd{=} \hlstr{""}\hlstd{,} \hlkwc{y} \hlstd{=} \hlstr{"Variable name"}\hlstd{)} \hlopt{+}
+  \hlkwd{scale_x_discrete}\hlstd{(}\hlkwc{breaks} \hlstd{=} \hlkwa{NULL}\hlstd{)} \hlopt{+}
+  \hlkwd{coord_flip}\hlstd{()}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+
+\columnbreak
+\section*{Multivariate Graphics}
+\subsection*{Side-by-side boxplots}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{ggplot}(data = data_set, mapping = \hlkwd{aes}(x = group, y = variable)) +
+  \hlkwd{geom_boxplot}() + 
+  \hlkwd{labs}(x = \hlstr{"Group"}, y = \hlstr{"Variable name"}) +
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+\squeeze
+\subsection*{Facetted histograms}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{ggplot}\hlstd{(}\hlkwc{data} \hlstd{= data_set,} \hlkwc{mapping} \hlstd{=} \hlkwd{aes}\hlstd{(}\hlkwc{x} \hlstd{= variable))} \hlopt{+}
+  \hlkwd{geom_histogram}\hlstd{(}\hlkwc{binwidth} \hlstd{= w,} \hlkwc{colour} \hlstd{=} \hlstr{"gray20"}\hlstd{)} \hlopt{+}
+  \hlkwd{labs}\hlstd{(}\hlkwc{x} \hlstd{=} \hlstr{"Variable name"}\hlstd{)} \hlopt{+}
+  \hlkwd{facet_wrap}\hlstd{(}\hlopt{~} \hlstd{group)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+\squeeze
+\subsection*{Scatterplot}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{ggplot}\hlstd{(}\hlkwc{data} \hlstd{= data_set,} \hlkwc{mapping} \hlstd{=} \hlkwd{aes}\hlstd{(}\hlkwc{x} \hlstd{= xvariable,} \hlkwc{y} \hlstd{= yvariable))} \hlopt{+}
+  \hlkwd{geom_point}\hlstd{()} \hlopt{+}
+  \hlkwd{labs}\hlstd{(}\hlkwc{x} \hlstd{=} \hlstr{"x-axis label"}\hlstd{,} \hlkwc{y} \hlstd{=} \hlstr{"y-axis label"}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+\squeeze
+\subsection*{Scatterplot + Smoother}
+\begin{knitrout}\small
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{ggplot}\hlstd{(}\hlkwc{data} \hlstd{= data_set,} \hlkwc{mapping} \hlstd{=} \hlkwd{aes}\hlstd{(}\hlkwc{x} \hlstd{= xvariable,} \hlkwc{y} \hlstd{= yvariable))} \hlopt{+}
+  \hlkwd{geom_point}\hlstd{()} \hlopt{+}
+  \hlkwd{geom_smooth}\hlstd{(}\hlkwc{method} \hlstd{=} \hlstr{"lm"}\hlstd{)} \hlopt{+}
+  \hlkwd{labs}\hlstd{(}\hlkwc{x} \hlstd{=} \hlstr{"x-axis label"}\hlstd{,} \hlkwc{y} \hlstd{=} \hlstr{"y-axis label"}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+
+
+\end{multicols}
+
+
+\end{document}
+
+

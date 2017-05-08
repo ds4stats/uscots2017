@@ -10,6 +10,8 @@ This workshop will explore ways to incorporate data-scientific topics into exist
 
 The tutorials and case studies were developed by [Adam Loy](https://aloy.github.io/), [Shonda Kuiper](https://www.grinnell.edu/users/kuipers), and [Laura Chihara](http://www.people.carleton.edu/~lchihara/) with support from the [ACM FaCE program](http://www.acm.edu/professional_development/FaCE__Faculty_Career_Enhancement_Project_.html) and [The Teagle Foundation](http://hybridliberalarts.org/about/). 
 
+Special thanks for Ivan Ramler for helping with the workshop!
+
 * * * 
 
 
@@ -37,18 +39,39 @@ Prior to the workshop, please do the following:
 
 ### Data visualization with `ggplot2`
 
-1. Obtain materials...
+##### Workflow
+
+1. Download the zip file containing the module. (Note: Mac users will need to use Chrome or Firefox, the download does not work with Safari.)
+1. Upload the zip file to the R Studio server OR unzip and store in a logical location on your laptop.
+1. Plot some data with `ggplot2`!
+
+#####  Additional resources
+
+- My [`ggplot2 cheatsheet for Intro Stats`]()
+- R Studio's [`ggplot2` cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf)
 
 ### Data wrangling with `dplyr`
 
-1. Obtain materials...
+##### Workflow
+
+1. Download the zip file containing the module.  (Note: Mac users will need to use Chrome or Firefox, the download does not work with Safari.)
+1. Upload the zip file to the R Studio server OR unzip and store in a logical location on your laptop.
+1. Wrangle some data with `dplyr`!
+
+#####  Additional resources
+
+- R Studio's [Data wrangling cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
 
 ### Wrapping up
 
 1. Where have these modules been tested?
 2. What topics are missing?
+3. How might you incorporate these modules into your classes?
 
 * * *
 
 ## Additional Resources
 
+1. [Full list of tutorials](http://web.grinnell.edu/individuals/kuipers/stat2labs/RTutorials.html)
+1. Our [GitHub organization](https://github.com/ds4stats)
+1. My [Fall 2016 intro stats materials](http://math107-lu.github.io/)
