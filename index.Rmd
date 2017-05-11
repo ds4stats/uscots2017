@@ -47,7 +47,7 @@ Prior to the workshop, please do the following:
 
 #####  Additional resources
 
-- My [`ggplot2 cheatsheet for Intro Stats`]()
+- My [`ggplot2 cheatsheet for Intro Stats`](assets/refcard/m107-EDA-refcard.pdf)
 - R Studio's [`ggplot2` cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf)
 
 ### Data wrangling with `dplyr`
@@ -72,6 +72,6 @@ Prior to the workshop, please do the following:
 
 ## Additional Resources
 
-1. [Full list of tutorials](http://web.grinnell.edu/individuals/kuipers/stat2labs/RTutorials.html)
+1. [Full list of tutorials on Stat2Labs](http://web.grinnell.edu/individuals/kuipers/stat2labs/RTutorials.html)
 1. Our [GitHub organization](https://github.com/ds4stats)
 1. My [Fall 2016 intro stats materials](http://math107-lu.github.io/)
