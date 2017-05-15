@@ -2,6 +2,13 @@ name: "USCOTS Workshop 2017"
 output_dir: "."
 navbar:
   title: "USCOTS Workshop 2017"
+  left:
+    - text: "Schedule"
+      href: index.html
+    - text: "Tutorials"
+      href: tutorials.html
+    - text: "Case Studies"
+      href: case-studies.html
 output:
   html_document:
     theme: readable

@@ -72,6 +72,7 @@ Prior to the workshop, please do the following:
 
 ## Additional Resources
 
+1. Check out the Tutorials and Case studies tabs of the website
 1. [Full list of tutorials on Stat2Labs](http://web.grinnell.edu/individuals/kuipers/stat2labs/RTutorials.html)
 1. Our [GitHub organization](https://github.com/ds4stats)
 1. My [Fall 2016 intro stats materials](http://math107-lu.github.io/)
