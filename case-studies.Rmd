@@ -2,4 +2,7 @@
 title: "Case Studies"
 ---
 
-INSERT TEXT
+
+**Tidy Data:** In this tutorial, we focus on how to properly format data sets so that they can be easily analyzed.
+
+
