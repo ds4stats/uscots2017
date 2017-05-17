@@ -10,7 +10,7 @@ This workshop will explore ways to incorporate data-scientific topics into exist
 
 The tutorials and case studies were developed by [Adam Loy](https://aloy.github.io/), [Shonda Kuiper](https://www.grinnell.edu/users/kuipers), and [Laura Chihara](http://www.people.carleton.edu/~lchihara/) with support from the [ACM FaCE program](http://www.acm.edu/professional_development/FaCE__Faculty_Career_Enhancement_Project_.html) and [The Teagle Foundation](http://hybridliberalarts.org/about/). 
 
-Special thanks for Ivan Ramler for helping with the workshop!
+Special thanks for [Ivan Ramler](https://www.stlawu.edu/people/ivan-ramler) for helping with the workshop!
 
 * * * 
 
@@ -22,8 +22,10 @@ Prior to the workshop, please do the following:
 1. Make sure that you have access to R and RStudio. I set up an RStudio server for today's workshop: [http://bit.ly/ds4stats-rstudio](http://bit.ly/ds4stats-rstudio)
 1. If using your own computer, update/install your R packages using the below code:
 
-    `update.packages()`
-    `install.packages(c("mosaic", "tidyverse", "rmarkdown"))`
+    ```{r eval=FALSE}
+    update.packages()
+    install.packages(c("mosaic", "tidyverse", "rmarkdown"))
+    ```
     
 1. If you have never seen R Studio or R markdown before, then please read the following:
     - [R and RStudio Basics](https://ismayc.github.io/rbasics-book/3-rstudiobasics.html) by Chester Ismay
@@ -45,32 +47,50 @@ Prior to the workshop, please do the following:
 
 ##### Workflow
 
-1. Download the [zip file]() containing the module. (Note: Mac users will need to use Chrome or Firefox, the download does not work with Safari.) 
+1. Download the [zip file](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/uscots2017/tree/master/assets/intro_ggplot2) containing the module. (Note: Mac users will need to use Chrome or Firefox, the download does not work with Safari.) 
 1. Upload the zip file to the R Studio server OR unzip and store in a logical location on your laptop.
-1. Plot some data with `ggplot2`!
+1. Plot data with `ggplot2`!
 
 #####  Additional resources
 
 - My [`ggplot2 cheatsheet for Intro Stats`](assets/refcard/m107-EDA-refcard.pdf)
 - R Studio's [`ggplot2` cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf)
 
+#####  If you get done early
+
+Check out another tutorial related to statistical graphics
+
+- [Shonda's version](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/data-viz) of intro to `ggplot2`
+- [Intro to maps with `ggplot2`](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/intro-maps)
+- [Making maps with shapefiles](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/maps-shapefiles)
+
 ### Data wrangling with `dplyr`
+
 
 ##### Workflow
 
-1. Download the [zip file]() containing the module.  (Note: Mac users will need to use Chrome or Firefox, the download does not work with Safari.)
+1. Download the [zip file](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/uscots2017/tree/master/assets/intro_dplyr) containing the module.  (Note: Mac users will need to use Chrome or Firefox, the download does not work with Safari.)
 1. Upload the zip file to the R Studio server OR unzip and store in a logical location on your laptop.
-1. Wrangle some data with `dplyr`!
+1. Wrangle data with `dplyr`!
+
 
 #####  Additional resources
 
 - R Studio's [Data wrangling cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
 
+
+#####  If you get done early
+
+Check out another tutorial/exercise related to data wrangling
+
+- [Tidy data with `tidyr`](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/tidying-data)
+- [Merging data with `dplyr`](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/merging)
+- [Ivan's `dplyr` and `ggplot2` practice problems](http://myslu.stlawu.edu/~iramler/stat201/dplyr_ggplot_tasks.html)
+
 ### Wrapping up
 
-1. Where have these modules been tested?
-2. What topics are missing?
-3. How might you incorporate these modules into your classes?
+1. What topics/materials are missing?
+1. How might you incorporate these modules into your classes?
 
 * * *
 
