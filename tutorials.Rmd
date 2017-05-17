@@ -7,17 +7,17 @@ Below is the complete list of tutorials that were created last summer. We wrote 
 
 **Tidy Data with `tidyr`** 
 
-[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/tidying-data) | [html](https://cdn.rawgit.com/ds4stats/r-tutorials/e9e5efc2/tidying-data/IntroTidyData.Rmd) | [github](https://github.com/ds4stats/r-tutorials/tree/master/tidying-data)
+[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/tidying-data) | [html](https://cdn.rawgit.com/ds4stats/r-tutorials/e9e5efc2/tidying-data/IntroTidyData.Rmd) | [github](https://rawgit.com/ds4stats/r-tutorials/master/tidying-data/IntroTidyData.html)
 
 
 **Data Wrangling: An Introduction to `dplyr`**
 
-[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/data-wrangling) | [html](https://cdn.rawgit.com/ds4stats/r-tutorials/tree/master/data-wrangling) | [github](https://github.com/ds4stats/r-tutorials/tree/master/data-wrangling)
+[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/data-wrangling) | [html](https://rawgit.com/ds4stats/r-tutorials/master/data-wrangling/IntroDplyr.html) | [github](https://github.com/ds4stats/r-tutorials/tree/master/data-wrangling)
 
 
 **Merging Data with `dplyr`**
 
-[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/merging) | [html](https://cdn.rawgit.com/ds4stats/r-tutorials/tree/master/merging) | [github](https://github.com/ds4stats/r-tutorials/tree/master/merging)
+[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/merging) | [html](https://rawgit.com/ds4stats/r-tutorials/master/merging/IntroMerging.html) | [github](https://github.com/ds4stats/r-tutorials/tree/master/merging)
 
 
 **Data Visualization: An Introduction to `ggplot2`**
@@ -27,27 +27,27 @@ Below is the complete list of tutorials that were created last summer. We wrote 
 
 **Introduction to Creating Maps with `ggplot2`**
 
-[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/intro-maps) | [html](https://cdn.rawgit.com/ds4stats/r-tutorials/tree/master/intro-maps) | [github](https://github.com/ds4stats/r-tutorials/tree/master/intro-maps)
+[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/intro-maps) | [html](https://rawgit.com/ds4stats/r-tutorials/master/data-viz/IntroToGgplot.html) | [github](https://github.com/ds4stats/r-tutorials/tree/master/intro-maps)
 
 
 **Making Maps with Shapefiles**
 
-[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/maps-shapefiles) | [html](https://cdn.rawgit.com/ds4stats/r-tutorials/tree/master/maps-shapefiles) | [github](https://github.com/ds4stats/r-tutorials/tree/master/maps-shapefiles)
+[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/maps-shapefiles) | [html](https://rawgit.com/ds4stats/r-tutorials/master/maps-shapefiles/MakingMapsWithShapefiles.html) | [github](https://github.com/ds4stats/r-tutorials/tree/master/maps-shapefiles)
 
 
 **Manipulating Text**
 
-[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/manipulating-text) | [html](https://cdn.rawgit.com/ds4stats/r-tutorials/tree/master/manipulating-text) | [github](https://github.com/ds4stats/r-tutorials/tree/master/manipulating-text)
+[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/manipulating-text) | [html](https://rawgit.com/ds4stats/r-tutorials/master/manipulating-text/IntroStrings.html) | [github](https://github.com/ds4stats/r-tutorials/tree/master/manipulating-text)
 
 
 **Working with Dates and Times**
 
-[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/dates-times) | [html](https://cdn.rawgit.com/ds4stats/r-tutorials/tree/master/dates-times) | [github](https://github.com/ds4stats/r-tutorials/tree/master/dates-times)
+[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/dates-times) | [html](https://rawgit.com/ds4stats/r-tutorials/master/dates-times/IntroDates.html) | [github](https://github.com/ds4stats/r-tutorials/tree/master/dates-times)
 
 
 **Introduction to Data Scraping with `rvest`**
 
-[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/data-scraping) | [html](https://cdn.rawgit.com/ds4stats/r-tutorials/tree/master/data-scraping) | [github](https://github.com/ds4stats/r-tutorials/tree/master/data-scraping)
+[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/r-tutorials/tree/master/data-scraping) | [html](https://rawgit.com/ds4stats/r-tutorials/master/data-scraping/IntroDataScraping.html) | [github](https://github.com/ds4stats/r-tutorials/tree/master/data-scraping)
 
 
 * * * 
@@ -58,37 +58,37 @@ This Fall, I adapted the visualization and data wrangling labs for use in my int
 
 Here is the [full schedule](http://math107-lu.github.io/) for my class.
 
-**Lab 1: **
+**Lab 1: Creating Graphs with ggplot2**
 
 [zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aloy/m107/tree/master/labs/01-ggplot2) | [html](https://cdn.rawgit.com/aloy/m107/766262ec/labs/01-ggplot2/01-IntroToGgplot.html) | [github](https://github.com/aloy/m107/tree/master/labs/01-ggplot2)
 
 
-** Lab 2: **
+**Lab 2: Introduction to Data Manipulation in R**
 
-[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aloy/m107/tree/master/labs/02-dplyr) | [html]() | [github](https://github.com/aloy/m107/tree/master/labs/02-dplyr)
-
-
-** Lab 3: **
-
-[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aloy/m107/tree/master/labs/03-permutationTests) | [html](https://cdn.rawgit.com/aloy/m107/766262ec/labs/02-dplyr/02-IntroDplyr.html) | [github](https://github.com/aloy/m107/tree/master/labs/03-permutationTests)
+[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aloy/m107/tree/master/labs/02-dplyr) | [html](https://cdn.rawgit.com/aloy/m107/766262ec/labs/02-dplyr/02-IntroDplyr.html) | [github](https://github.com/aloy/m107/tree/master/labs/02-dplyr)
 
 
-** Lab 4: **
+**Lab 3: Introduction to Hypothesis Testing**
 
-[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aloy/m107/tree/master/labs/04-permutationTests2) | [html]() | [github](https://github.com/aloy/m107/tree/master/labs/04-permutationTests2)
-
-
-** Lab 5A: **
-
-[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aloy/m107/tree/master/labs/05-oneSampleBootstrap) | [html]() | [github](https://github.com/aloy/m107/tree/master/labs/05-oneSampleBootstrap)
+[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aloy/m107/tree/master/labs/03-permutationTests) | [html](https://cdn.rawgit.com/aloy/m107/d1b98730/labs/03-permutationTests/03-permutationTests.html) | [github](https://github.com/aloy/m107/tree/master/labs/03-permutationTests)
 
 
-** Lab 5B: **
+**Lab 4: Comparing Two Proportions**
 
-[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aloy/m107/tree/master/labs/05B-twoSampleBootstrap) | [html]() | [github](https://github.com/aloy/m107/tree/master/labs/05B-twoSampleBootstrap)
+[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aloy/m107/tree/master/labs/04-permutationTests2) | [html](https://cdn.rawgit.com/aloy/m107/d1b98730/labs/04-permutationTests2/04-permutationTests2.html) | [github](https://github.com/aloy/m107/tree/master/labs/04-permutationTests2)
 
 
-** Lab 6: **
+**Lab 5A: The one-sample bootstrap**
 
-[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aloy/m107/tree/master/labs/06-slr) | [html]() | [github](https://github.com/aloy/m107/tree/master/labs/06-slr)
+[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aloy/m107/tree/master/labs/05-oneSampleBootstrap) | [html](https://cdn.rawgit.com/aloy/m107/d1b98730/labs/05-oneSampleBootstrap/lab5.html) | [github](https://github.com/aloy/m107/tree/master/labs/05-oneSampleBootstrap)
+
+
+**Lab 5B: The two-sample bootstrap**
+
+[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aloy/m107/tree/master/labs/05B-twoSampleBootstrap) | [html](https://cdn.rawgit.com/aloy/m107/d1b98730/labs/05B-twoSampleBootstrap/lab5b.html) | [github](https://github.com/aloy/m107/tree/master/labs/05B-twoSampleBootstrap)
+
+
+**Lab 6: Simple linear regression in R**
+
+[zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aloy/m107/tree/master/labs/06-slr) | [html](https://cdn.rawgit.com/aloy/m107/d1b98730/labs/06-slr/lab6.html) | [github](https://github.com/aloy/m107/tree/master/labs/06-slr)
 
