@@ -48,7 +48,7 @@ Prior to the workshop, please do the following:
 
 ##### Workflow
 
-1. Download the [zip file](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/uscots2017/tree/master/assets/intro_ggplot2) containing the module. (Note: Mac users will need to use Chrome or Firefox, the download does not work with Safari.) 
+1. Download the [zip file](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/worksop/tree/master/intro_ggplot2) containing the module. (Note: Mac users will need to use Chrome or Firefox, the download does not work with Safari.) 
 1. Upload the zip file to the R Studio server OR unzip and store in a logical location on your laptop.
 1. Plot data with `ggplot2`!
 
@@ -70,7 +70,7 @@ Check out another tutorial related to statistical graphics
 
 ##### Workflow
 
-1. Download the [zip file](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/uscots2017/tree/master/assets/intro_dplyr) containing the module.  (Note: Mac users will need to use Chrome or Firefox, the download does not work with Safari.)
+1. Download the [zip file](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/ds4stats/worksop/tree/master/intro_dplyr) containing the module.  (Note: Mac users will need to use Chrome or Firefox, the download does not work with Safari.)
 1. Upload the zip file to the R Studio server OR unzip and store in a logical location on your laptop.
 1. Wrangle data with `dplyr`!
 
