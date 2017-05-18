@@ -41,7 +41,8 @@ Prior to the workshop, please do the following:
 ### Welcome!
 
 1. Introductions
-2. Brief overview of the project
+1. Open [communal notes](https://docs.google.com/document/d/1_AruRpFzSMv_Io5eoh_CiBmV4l0I11WFU61FpnA5BJg/edit?usp=sharing) -- Add questions, comments, and notes throughout the workshop
+1. Brief overview of the project
 
 ### Data visualization with `ggplot2`
 
@@ -56,7 +57,7 @@ Prior to the workshop, please do the following:
 - My [`ggplot2 cheatsheet for Intro Stats`](assets/refcard/m107-EDA-refcard.pdf)
 - R Studio's [`ggplot2` cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/11/ggplot2-cheatsheet-2.1.pdf)
 
-#####  If you get done early
+#####  If you get done early...
 
 Check out another tutorial related to statistical graphics
 
@@ -79,7 +80,7 @@ Check out another tutorial related to statistical graphics
 - R Studio's [Data wrangling cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
 
 
-#####  If you get done early
+#####  If you get done early...
 
 Check out another tutorial/exercise related to data wrangling
 
@@ -89,6 +90,7 @@ Check out another tutorial/exercise related to data wrangling
 
 ### Wrapping up
 
+1. Pull files off the RStudio server
 1. What topics/materials are missing?
 1. How might you incorporate these modules into your classes?
 
@@ -96,7 +98,9 @@ Check out another tutorial/exercise related to data wrangling
 
 ## Additional Resources
 
-1. Check out the Tutorials and Case studies tabs of the website
+1. Check out the [Tutorials](tutorials.html) and [Case studies](case-studies.html) tabs of the website
 1. [Full list of tutorials on Stat2Labs](http://web.grinnell.edu/individuals/kuipers/stat2labs/RTutorials.html)
-1. Our [GitHub organization](https://github.com/ds4stats)
+1. ds4stats [GitHub organization](https://github.com/ds4stats)
 1. My [Fall 2016 intro stats materials](http://math107-lu.github.io/)
+1. [rawgit](https://docs.google.com/document/d/1_AruRpFzSMv_Io5eoh_CiBmV4l0I11WFU61FpnA5BJg/edit?usp=sharing) for displaying .html versions of the tutorials directly from GitHub
+1. [DownGit](https://minhaskamal.github.io/DownGit/#/home) for downloading .zip files for specific folders on GitHub
