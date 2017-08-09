@@ -102,5 +102,5 @@ Check out another tutorial/exercise related to data wrangling
 1. [Full list of tutorials on Stat2Labs](http://web.grinnell.edu/individuals/kuipers/stat2labs/RTutorials.html)
 1. ds4stats [GitHub organization](https://github.com/ds4stats)
 1. My [Fall 2016 intro stats materials](http://math107-lu.github.io/)
-1. [rawgit](https://docs.google.com/document/d/1_AruRpFzSMv_Io5eoh_CiBmV4l0I11WFU61FpnA5BJg/edit?usp=sharing) for displaying .html versions of the tutorials directly from GitHub
+1. [rawgit](https://rawgit.com/) for displaying .html versions of the tutorials directly from GitHub
 1. [DownGit](https://minhaskamal.github.io/DownGit/#/home) for downloading .zip files for specific folders on GitHub

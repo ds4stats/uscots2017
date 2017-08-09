@@ -2,7 +2,7 @@
 %\VignetteIndexEntry{Minimal R}
 %\VignettePackage{mosaic}
 %\VignetteKeywords{mosaic, vignettes, minimal}
-%\VignetteEngine{knitr::knitr} 
+%\VignetteEngine{knitr::knitr}
 
 \documentclass[10pt]{report}\usepackage[]{graphicx}\usepackage[]{color}
 %% maxwidth is the original width if it is less than linewidth
@@ -163,7 +163,7 @@ This reference cards provides you with the recipes for exploratory graphics that
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlkwd{ggplot}\hlstd{(}\hlkwc{data} \hlstd{= data_set,} \hlkwc{mapping} \hlstd{=} \hlkwd{aes}\hlstd{(}\hlkwc{x} \hlstd{= variable))} \hlopt{+}
-  \hlkwd{geom_histogram}\hlstd{(}\hlkwc{binwidth} \hlstd{= w,} \hlkwc{colour} \hlstd{=} \hlstr{"gray20"}\hlstd{)} \hlopt{+}
+  \hlkwd{geom_histogram}\hlstd{(}\hlkwc{binwidth} \hlstd{= w,} \hlkwc{color} \hlstd{=} \hlstr{"gray20"}\hlstd{)} \hlopt{+}
   \hlkwd{labs}\hlstd{(}\hlkwc{x} \hlstd{=} \hlstr{"Variable name"}\hlstd{)}
 \end{alltt}
 \end{kframe}
@@ -184,10 +184,10 @@ This reference cards provides you with the recipes for exploratory graphics that
 \begin{knitrout}\small
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlkwd{ggplot}\hlstd{(}\hlkwc{data} \hlstd{= data_set)} \hlopt{+}
-  \hlkwd{geom_density}\hlstd{(}\hlkwc{mapping} \hlstd{=} \hlkwd{aes}\hlstd{(}\hlkwc{x} \hlstd{= variable))} \hlopt{+}
-  \hlkwd{geom_histogram}\hlstd{(}\hlkwd{aes}\hlstd{(}\hlkwc{x} \hlstd{= variable,} \hlkwc{y} \hlstd{= ..density..),} \hlkwc{binwidth} \hlstd{= w,}
-                 \hlkwc{colour} \hlstd{=} \hlstr{"gray20"}\hlstd{)} \hlopt{+}
+\hlkwd{ggplot}\hlstd{(}\hlkwc{data} \hlstd{= data_set,} \hlkwc{mapping} \hlstd{=} \hlkwd{aes}\hlstd{(}\hlkwc{x} \hlstd{= variable))} \hlopt{+}
+  \hlkwd{geom_histogram}\hlstd{(}\hlkwd{aes}\hlstd{(}\hlkwc{y} \hlstd{= ..density..),} \hlkwc{binwidth} \hlstd{= w,}
+                 \hlkwc{color} \hlstd{=} \hlstr{"gray20"}\hlstd{)} \hlopt{+}
+  \hlkwd{geom_density}\hlstd{()} \hlopt{+}
   \hlkwd{labs}\hlstd{(}\hlkwc{x} \hlstd{=} \hlstr{"Variable name"}\hlstd{)}
 \end{alltt}
 \end{kframe}
@@ -213,18 +213,18 @@ This reference cards provides you with the recipes for exploratory graphics that
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlkwd{ggplot}(data = data_set, mapping = \hlkwd{aes}(x = group, y = variable)) +
-  \hlkwd{geom_boxplot}() + 
+  \hlkwd{geom_boxplot}() +
   \hlkwd{labs}(x = \hlstr{"Group"}, y = \hlstr{"Variable name"}) +
 \end{alltt}
 \end{kframe}
 \end{knitrout}
 \squeeze
-\subsection*{Facetted histograms}
+\subsection*{Facetted density plots}
 \begin{knitrout}\small
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlkwd{ggplot}\hlstd{(}\hlkwc{data} \hlstd{= data_set,} \hlkwc{mapping} \hlstd{=} \hlkwd{aes}\hlstd{(}\hlkwc{x} \hlstd{= variable))} \hlopt{+}
-  \hlkwd{geom_histogram}\hlstd{(}\hlkwc{binwidth} \hlstd{= w,} \hlkwc{colour} \hlstd{=} \hlstr{"gray20"}\hlstd{)} \hlopt{+}
+  \hlkwd{geom_density}\hlstd{()} \hlopt{+}
   \hlkwd{labs}\hlstd{(}\hlkwc{x} \hlstd{=} \hlstr{"Variable name"}\hlstd{)} \hlopt{+}
   \hlkwd{facet_wrap}\hlstd{(}\hlopt{~} \hlstd{group)}
 \end{alltt}
@@ -242,7 +242,7 @@ This reference cards provides you with the recipes for exploratory graphics that
 \end{kframe}
 \end{knitrout}
 \squeeze
-\subsection*{Scatterplot + Smoother}
+\subsection*{Scatterplot + Linear smoother}
 \begin{knitrout}\small
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}

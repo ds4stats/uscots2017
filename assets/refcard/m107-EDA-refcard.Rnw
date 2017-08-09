@@ -2,7 +2,7 @@
 %\VignetteIndexEntry{Minimal R}
 %\VignettePackage{mosaic}
 %\VignetteKeywords{mosaic, vignettes, minimal}
-%\VignetteEngine{knitr::knitr} 
+%\VignetteEngine{knitr::knitr}
 
 \documentclass[10pt]{report}
 
@@ -100,7 +100,7 @@ opts_chunk$set(
 	fig.show='hold',
 	message=FALSE
 	)
-@ 
+@
 
 
 \let\oldchapter=\chapter
@@ -124,30 +124,30 @@ This reference cards provides you with the recipes for exploratory graphics that
 \section*{Univariate Graphics}
 \subsection*{Bar chart}
 <<>>=
-ggplot(data = data_set, mapping = aes(x = variable)) + 
-  geom_bar() + 
+ggplot(data = data_set, mapping = aes(x = variable)) +
+  geom_bar() +
   labs(x = "Variable name")
 @
 \squeeze
 \subsection*{Histogram}
 <<>>=
-ggplot(data = data_set, mapping = aes(x = variable)) + 
-  geom_histogram(binwidth = w, colour = "gray20") + 
+ggplot(data = data_set, mapping = aes(x = variable)) +
+  geom_histogram(binwidth = w, color = "gray20") +
   labs(x = "Variable name")
 @
 \squeeze
 \subsection*{Density}
 <<>>=
-ggplot(data = data_set, mapping = aes(x = variable)) + 
-  geom_density() + 
+ggplot(data = data_set, mapping = aes(x = variable)) +
+  geom_density() +
   labs(x = "Variable name")
 @
 \squeeze
 \subsection*{Histogram + Density}
 <<>>=
-ggplot(data = data_set, mapping = aes(x = variable)) + 
-  geom_histogram(aes(y = ..density..), binwidth = w, 
-                 colour = "gray20") + 
+ggplot(data = data_set, mapping = aes(x = variable)) +
+  geom_histogram(aes(y = ..density..), binwidth = w,
+                 color = "gray20") +
   geom_density() +
   labs(x = "Variable name")
 @
@@ -157,7 +157,7 @@ ggplot(data = data_set, mapping = aes(x = variable)) +
 ggplot(data = data_set, mapping = aes("var", variable)) +
   geom_boxplot() +
   labs(x = "", y = "Variable name") +
-  scale_x_discrete(breaks = NULL) + 
+  scale_x_discrete(breaks = NULL) +
   coord_flip()
 @
 
@@ -166,14 +166,14 @@ ggplot(data = data_set, mapping = aes("var", variable)) +
 \subsection*{Side-by-side boxplots}
 <<>>=
 ggplot(data = data_set, mapping = aes(x = group, y = variable)) +
-  geom_boxplot() + 
+  geom_boxplot() +
   labs(x = "Group", y = "Variable name") +
 @
 \squeeze
-\subsection*{Facetted histograms}
+\subsection*{Facetted density plots}
 <<>>=
 ggplot(data = data_set, mapping = aes(x = variable)) +
-  geom_histogram(binwidth = w, colour = "gray20") +
+  geom_density() +
   labs(x = "Variable name") +
   facet_wrap(~ group)
 @
@@ -185,7 +185,7 @@ ggplot(data = data_set, mapping = aes(x = xvariable, y = yvariable)) +
   labs(x = "x-axis label", y = "y-axis label")
 @
 \squeeze
-\subsection*{Scatterplot + Smoother}
+\subsection*{Scatterplot + Linear smoother}
 <<>>=
 ggplot(data = data_set, mapping = aes(x = xvariable, y = yvariable)) +
   geom_point() +
